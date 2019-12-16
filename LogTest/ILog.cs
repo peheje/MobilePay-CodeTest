@@ -21,6 +21,9 @@ namespace LogTest
         /// <param name="text">The text to written to the log</param>
         void Write(string text);
 
-
+        /// <summary>
+        /// Gets the path of the file in which the logger last wrote to.
+        /// </summary>
+        string LastWrittenPath { get; }
     }
 }
